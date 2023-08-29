@@ -12,7 +12,7 @@ async function login(event) {
         if(logindetails.status === 200){
             localStorage.setItem('token', logindetails.data.token)
 
-            window.location.href = 'http://localhost:1010/homePage'
+            window.location.href = 'http://localhost:1010/homepage'
         }else{
             console.log('failed to login')
         }

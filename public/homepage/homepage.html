@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="homepage.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="page-wrapper chiller-theme toggled">
+    <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar" class="sidebar-wrapper" >
+      <div class="sidebar-content">
+        <div class="sidebar-brand">
+          <a href="#">pro sidebar</a>
+          <div id="close-sidebar">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="sidebar-header">
+          <div class="user-pic">
+            <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+              alt="User picture">
+          </div>
+          <div class="user-info">
+            <span class="user-name">Jhon
+              <strong>Smith</strong>
+            </span>
+            <span class="user-role">Administrator</span>
+            <span class="user-status">
+              <i class="fa fa-circle"></i>
+              <!-- <span>Online</span> -->
+            </span>
+          </div>
+        </div>
+        <!-- sidebar-header  -->
+        <div class="sidebar-search">
+          <div>
+            <div class="input-group">
+              <input type="text" class="form-control search-menu" placeholder="Search...">
+              <div class="input-group-append">
+                <span class="input-group-text">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sidebar-search  -->
+        <div class="sidebar-menu">
+          <ul>
+            <li class="header-menu">
+              <span>General</span>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-folder"></i>
+                <span>Previous Sessions</span>
+                <span class="badge badge-pill badge-warning">New</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul id="previousSessions">
+                  
+                  <li>
+                    <i class="fa fa-file"></i>
+                    <button>day 1 </button>
+                  </li>
+                  <li>
+                    <i class="fa fa-file"></i>
+                    <button>day 3</button>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-shopping-cart"></i>
+                <span>E-commerce</span>
+                <span class="badge badge-pill badge-danger">3</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">Products
+  
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Orders</a>
+                  </li>
+                  <li>
+                    <a href="#">Credit cart</a>
+                  </li>
+                </ul>
+              </div>
+            </li> -->
+            
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="far fa-gem"></i>
+                <span>Components</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">General</a>
+                  </li>
+                  <li>
+                    <a href="#">Panels</a>
+                  </li>
+                  <li>
+                    <a href="#">Tables</a>
+                  </li>
+                  <li>
+                    <a href="#">Icons</a>
+                  </li>
+                  <li>
+                    <a href="#">Forms</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-globe"></i>
+                <span>Maps</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">Google maps</a>
+                  </li>
+                  <li>
+                    <a href="#">Open street map</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="header-menu">
+              <span>Extra</span>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-book"></i>
+                <span>Documentation</span>
+                <span class="badge badge-pill badge-primary">Beta</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-calendar"></i>
+                <span>Calendar</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-folder"></i>
+                <span>Examples</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- sidebar-menu  -->
+      </div>
+      <!-- sidebar-content  -->
+      <!-- <div class="sidebar-footer">
+        <a href="#">
+          <i class="fa fa-bell"></i>
+          <span class="badge badge-pill badge-warning notification">3</span>
+        </a>
+        <a href="#">
+          <i class="fa fa-envelope"></i>
+          <span class="badge badge-pill badge-success notification">7</span>
+        </a>
+        <a href="#">
+          <i class="fa fa-cog"></i>
+          <span class="badge-sonar"></span>
+        </a>
+        <a href="#">
+          <i class="fa fa-power-off"></i>
+        </a>
+      </div> -->
+    </nav>
+    <!-- sidebar-wrapper  -->
+    <div class="container mt-5">
+        <div class="row justify-content-center" >
+            <!-- Left Column (Long Column) -->
+            <div class="col-md-3">
+                <!-- <h3>About Us</h3>
+                <p>Welcome to our virtual therapist chat platform. We are here to provide you with support, guidance, and a listening ear.</p> -->
+            </div>
+    
+            <!-- Right Column (Chat Section) -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Chat with Our Therapist
+                    </div>
+                    <div class="card-body">
+                        <!-- Your chat interface goes here -->
+                        <!-- You can use a textarea or any other chat input components -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="chat-box-container" class="row">
+          <div id="chatbot-img">
+            <img src="https://img.freepik.com/premium-vector/chatbot-icon-concept-chat-bot-chatterbot-robot-virtual-assistance-website_123447-1615.jpg?w=2000" alt="" style="width: 100px; height: 100px;">
+          </div>
+            <div id="chat-box" class="col-md-6">
+             
+                 <div class="card-body msg_card_body" id="parentMessageContainer">
+                    <!-- <h1>dcdkc</h1>
+                    <h1>dcdkc</h1>
+                    <h1>dcdkc</h1>
+                    <h1>dcdkc</h1> -->
+                </div>
+              </div>
+
+              <div id="message-form">
+                <form onsubmit="sendMessage(event)">
+                <input id="sendMessageInput" type="text" required>
+                <button id="sendMessageButton">send</button>
+                </form>
+              </div>
+              
+            </div>
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="homepage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    </body>
+</html>

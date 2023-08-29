@@ -14,7 +14,7 @@ function generateToken (Id){
 exports.userLogin = async (req, res) => {
     const { email, password } = req.body;
     try {
-      const user = await Users.findOne({ where: { email } });
+      const user = await Users.findOne({email});
       if (!user) {
         return res.status(404).json({ success: false, message: "User not found" });
       } else {
