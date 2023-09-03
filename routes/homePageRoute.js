@@ -8,8 +8,8 @@ router.get('/homepage', controller.showHomePage)
 
 router.post('/sendMessage', auth.auth,controller.userMessage)
 
-// router.post('/sendMessage', (req, res) => {
-//     console.log(req.body)
-// })
+router.get('/getMessages', auth.auth, controller.getMessages)
+
+
 
 module.exports = router;

@@ -9,7 +9,11 @@ const chatSchema = new mongoose.Schema({
     userId: {
         type: String,
         required: true
-    }
+    },
+    // sessionId: {
+    //     type: String,
+    //     required: true
+    // }
 })
 
 const Chats = mongoose.model('Chats', chatSchema)
