@@ -21,6 +21,7 @@
     "mongoose": "^7.4.5",
     "mysql2": "^3.6.0",
     "openai": "^4.0.0",
+    "sentiment": "^5.0.2",
     "sequelize": "^6.32.1",
     "typewriter-effect": "^2.20.1",
     "uuid": "^9.0.0"
