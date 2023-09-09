@@ -10,10 +10,13 @@ const chatSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    // sessionId: {
-    //     type: String,
-    //     required: true
+    // chatLength: {
+    //     type: Number,
     // }
+    sessionId: {
+        type: String,
+        required: true
+    }
 })
 
 const Chats = mongoose.model('Chats', chatSchema)

@@ -1,0 +1,25 @@
+#musicListDiv{
+    /* border: 2px solid red; */
+    height: 600px;
+    width: 200px;
+    overflow: auto;
+    background-color: #1c1d1e80;
+}
+body{
+    background-color: #31353D !important;
+    color: white !important;
+}
+.musicLi{
+    text-decoration: none;
+    list-style: none;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+#playMusicCard{
+  color: white;
+}
+
+.card{
+    background-color: rgb(92, 91, 91) !important;
+}

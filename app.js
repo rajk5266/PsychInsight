@@ -14,10 +14,14 @@ app.use(express.static(path.join(__dirname, 'public')))
 const signUpRoute = require('./routes/signUpRoute')
 const loginRoute = require('./routes/loginRoute')
 const homePageRoute = require('./routes/homePageRoute');
+const sessionRoute = require('./routes/sessionRoute')
+const musicRoute = require('./routes/musicPlayerRoute')
 
 app.use('/' , signUpRoute);
 app.use('/', loginRoute);
 app.use('/', homePageRoute)
+app.use(sessionRoute)
+app.use('/', musicRoute)
 
 mongoose.connect(
     process.env.MONGODB

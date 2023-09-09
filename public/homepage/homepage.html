@@ -33,10 +33,10 @@
               alt="User picture">
           </div>
           <div class="user-info">
-            <span class="user-name">Jhon
-              <strong>Smith</strong>
+            <!-- <span class="user-name">Jhon -->
+            <strong id="userName"></strong>
             </span>
-            <span class="user-role">Administrator</span>
+            <!-- <span class="user-role">Administrator</span> -->
             <span class="user-status">
               <i class="fa fa-circle"></i>
               <!-- <span>Online</span> -->
@@ -47,11 +47,11 @@
         <div class="sidebar-search">
           <div>
             <div class="input-group">
-              <input type="text" class="form-control search-menu" placeholder="Search...">
+              <!-- <input type="text" class="form-control search-menu" placeholder="Search..."> -->
               <div class="input-group-append">
-                <span class="input-group-text">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </span>
+                <!-- <span class="input-group-text"> -->
+                <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
+                <!-- </span> -->
               </div>
             </div>
           </div>
@@ -70,43 +70,11 @@
               </a>
               <div class="sidebar-submenu">
                 <ul id="previousSessions">
-
-                  <li>
-                    <i class="fa fa-file"></i>
-                    <button>day 1 </button>
-                  </li>
-                  <li>
-                    <i class="fa fa-file"></i>
-                    <button>day 3</button>
-                  </li>
                 </ul>
               </div>
             </li>
 
             <!-- <li class="sidebar-dropdown">
-              <a href="#">
-                <i class="fa fa-shopping-cart"></i>
-                <span>E-commerce</span>
-                <span class="badge badge-pill badge-danger">3</span>
-              </a>
-              <div class="sidebar-submenu">
-                <ul>
-                  <li>
-                    <a href="#">Products
-  
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">Orders</a>
-                  </li>
-                  <li>
-                    <a href="#">Credit cart</a>
-                  </li>
-                </ul>
-              </div>
-            </li> -->
-
-            <li class="sidebar-dropdown">
               <a href="#">
                 <i class="far fa-gem"></i>
                 <span>Components</span>
@@ -130,9 +98,9 @@
                   </li>
                 </ul>
               </div>
-            </li>
+            </li> -->
 
-            <li class="sidebar-dropdown">
+            <!-- <li class="sidebar-dropdown">
               <a href="#">
                 <i class="fa fa-globe"></i>
                 <span>Maps</span>
@@ -147,7 +115,8 @@
                   </li>
                 </ul>
               </div>
-            </li>
+            </li> -->
+
             <li class="header-menu">
               <span>Extra</span>
             </li>
@@ -159,9 +128,9 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="http://localhost:1010/musicPlayer">
                 <i class="fa fa-calendar"></i>
-                <span>Calendar</span>
+                <span>Music</span>
               </a>
             </li>
             <li>
@@ -175,31 +144,15 @@
         <!-- sidebar-menu  -->
       </div>
       <!-- sidebar-content  -->
-      <!-- <div class="sidebar-footer">
-        <a href="#">
-          <i class="fa fa-bell"></i>
-          <span class="badge badge-pill badge-warning notification">3</span>
-        </a>
-        <a href="#">
-          <i class="fa fa-envelope"></i>
-          <span class="badge badge-pill badge-success notification">7</span>
-        </a>
-        <a href="#">
-          <i class="fa fa-cog"></i>
-          <span class="badge-sonar"></span>
-        </a>
-        <a href="#">
-          <i class="fa fa-power-off"></i>
-        </a>
-      </div> -->
+
     </nav>
     <!-- sidebar-wrapper  -->
 
-    <!-- <div id="session">
-      <h1>start session</h1>
-      <button id="session-button"> Start New Session</button>
-    </div> -->
-    <div class="container mt-5" id="chatContainer">
+    <div id="session">
+      <!-- <h1>start session</h1> -->
+      <button class="btn btn-primary" id="session-button"> Start New Session</button>
+    </div>
+    <div class="container mt-5" id="chatContainer" style="display: none;">
       <div class="row justify-content-center">
         <!-- Left Column (Long Column) -->
         <div class="col-md-3">
@@ -209,15 +162,12 @@
 
         <!-- Right Column (Chat Section) -->
         <div class="col-md-6">
-          <div class="card">
-            <!-- <div class="card-header">
-                        Chat with Our Therapist
-                    </div> -->
+          <!-- <div class="card">
+          
             <div class="card-body">
-              <!-- Your chat interface goes here -->
-              <!-- You can use a textarea or any other chat input components -->
+             
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -229,68 +179,68 @@
         </div>
         <div id="chat-box" class="col-md-6">
 
-          <div class="card-body msg_card_body" id="parentMessageContainer">
+          <!-- <div class="card-body msg_card_body" id="parentMessageContainer">
 
-          </div>
-        </div>
-        <div id="message-form">
-          <form onsubmit="sendMessage(event)">
-            <input id="sendMessageInput" type="text" required>
-            <button id="sendMessageButton">send</button>
-          </form>
-
+          </div> -->
 
         </div>
         <div>
-          <div id="spotifyDiv">
-            <!-- Embed Spotify track here -->
-
+          <div id="message-form">
+            <form onsubmit="sendMessage(event)">
+              <input id="sendMessageInput" type="text" required placeholder="ask something ...">
+              <button id="sendMessageButton">send</button>
+            </form>
           </div>
-
         </div>
-
       </div>
-    </div>
-
-  </div>
-
-  <div id="player">
-    <div class="album">
-      <div class="heart"><i class="fas fa-heart"></i></div>
-    </div>
-    <div class="info">
-      <div class="progress-bar">
-        <div class="time--current">1:25</div>
-        <div class="time--total">-3:15</div>
-        <div class="fill"></div>
-      </div>
-      <div class="currently-playing">
-        <h2 class="song-name">Symphony</h2>
-        <h3 class="artist-name">Clean Bandit ft. Zara Larsson</h3>
-      </div>
-      <div class="controls">
-        <div class="option"><i class="fas fa-bars"></i></div>
-        <div class="volume"><i class="fas fa-volume-up"></i></div>
-        <div class="previous"><i class="fas fa-backward"></i></div>
-        <div class="play"><i class="fas fa-play"></i></div>
-        <div class="pause"><i class="fas fa-pause"></i></div>
-        <div class="next"><i class="fas fa-forward"></i></div>
-        <div class="shuffle"><i class="fas fa-random"></i></div>
-        <div class="add"><i class="fas fa-plus"></i></div>
-      </div>
+      <button class="btn btn-success" id="end-session">End Session</button>
     </div>
   </div>
-  
-  <footer>
-    <p>made by <a href="https://codepen.io/juliepark"> julie</a> ♡
-  </footer>
+  </div>
+
+
+  <div class="popup" id="musicPlayer">
+    <div class="player" id="playerId">
+      <!-- Your music player content here -->
+      <h2>Now Playing</h2>
+      <div id="musicDiv">
+      </div>
+      <button id="closePlayer">Close</button>
+    </div>
+  </div>
+
+  <!-- Button trigger modal -->
+  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Launch demo modal
+</button> -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="false">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Session Report</h5>
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+          <!-- <span aria-hidden="true">&times;</span> -->
+          <!-- </button> -->
+        </div>
+        <div class="modal-body">
+          <p id="report"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="closeModal" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="homepage.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
-
 </body>
 
 </html>

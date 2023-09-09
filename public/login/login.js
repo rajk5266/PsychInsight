@@ -5,10 +5,8 @@ async function login(event) {
             email: event.target.email.value,
             password: event.target.password.value
         }
-
         const logindetails = await axios.post('http://localhost:1010/login', obj)
-
-        console.log(logindetails)
+        // console.log(logindetails)
         if(logindetails.status === 200){
             localStorage.setItem('token', logindetails.data.token)
 
@@ -18,8 +16,6 @@ async function login(event) {
         }
 
     } catch (err) {
-
-        console.log('error')
         console.log(err)
         if (err.response.status === 404) {
             alert('user not found, please sign-up')

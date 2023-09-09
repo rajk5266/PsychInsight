@@ -6,10 +6,11 @@ const auth  = require('../authentication/auth')
 
 router.get('/homepage', controller.showHomePage)
 
-router.post('/sendMessage', auth.auth,controller.userMessage)
+router.post('/sendMessage/:sessionId', auth.auth,controller.userMessage)
 
-router.get('/getMessages', auth.auth, controller.getMessages)
+router.get('/getMessages/:sessionId', auth.auth, controller.getMessages)
 
+router.get('/getName/', auth.auth, controller.getUserName)
 
 
 module.exports = router;

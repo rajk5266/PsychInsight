@@ -3,7 +3,8 @@ const Users = require('../models/user')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 require('dotenv').config()
-const token = process.env.TOKEN
+const token = process.env.TOKEN;
+
 exports.loginpage = (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'public', 'login', 'login.html'))
 }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Music Player</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="musicPlayer.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div id="musicListDiv" class="col-lg-4 ">
+               <ul id="musicList">
+
+               </ul>
+            </div>
+            <div class="col-lg-6">
+                <!-- Music Player -->
+                <div class="card">
+                    <img src="https://cdnb.artstation.com/p/assets/images/images/054/048/197/large/stella-sky-02-stella-sky-meditation-relaxation-nature-trees-flowers-water-bud-b1935bda-b806-4018-9f60-13a93aea4b75.jpg?1663653879" class="card-img-top" alt="Music Cover">
+                    <div class="card-body" id="playMusicCard">
+                        <h5 id="musicTitle" class="card-title">Song Title</h5>
+                        <p id="musicGenre" class="card-text">Artist Name</p>
+                        <!-- <audio controls class="w-100">
+                            <source src="https://expense-tracker-report.s3.eu-north-1.amazonaws.com/Mandragora+-+Codeine+(Original+Mix)(MP3_160K).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to Bootstrap JS and Popper.js (required for Bootstrap components) -->
+    <script src="musicPlayer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
